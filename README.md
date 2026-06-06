@@ -9,11 +9,6 @@ This release contains the HERO codebase only: models, runners, configs, and util
 - `DATASET_INSTRUCTIONS.txt`: dataset download and preprocessing pointers.
 - `data/custom_dataset_script.py`: converter for the supported benchmark layouts.
 
-## What is not included
-- Raw benchmark datasets and processed caches under `data/`.
-- `results/`, `profiles/`, `NOT_release/`, and paper sources under `PAPER/`.
-- Any generated checkpoints, plots, or timing logs.
-
 ## Installation
 1. Create a virtual environment.
 2. Install the dependencies:
@@ -70,8 +65,3 @@ Each run writes its artifacts under:
 results/<dataset>/<module>/<tag>/
 ```
 Typical outputs include `config.json`, `summary.json`, metrics, and any optional plots or timing traces.
-
-## Notes for release users
-- This bundle is self-contained for code inspection and reproduction, but dataset downloads are still required.
-- The optional FAISS path is only used for the pseudo-label safety proxy; the rest of HERO runs without it.
-- For a compact end-to-end overview of the method, start with `hero/modules/new_hero.py` and `hero/runners/experiment.py`.
