@@ -9,10 +9,6 @@ This release contains the HERO codebase only: models, runners, configs, and util
 - `DATASET_INSTRUCTIONS.txt`: dataset download and preprocessing pointers.
 - `data/custom_dataset_script.py`: converter for the supported benchmark layouts.
 
-## What is not included
-- Raw benchmark datasets and processed caches under `data/`.
-- `results/`, `profiles/`, `NOT_release/`, and paper sources under `PAPER/`.
-- Any generated checkpoints, plots, or timing logs.
 
 ## Installation
 1. Create a virtual environment.
